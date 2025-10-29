@@ -39,6 +39,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          # Sube el directorio de salida de Next.js
           path: ./out
 
   # Trabajo de despliegue
