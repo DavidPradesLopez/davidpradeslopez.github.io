@@ -1,36 +1,19 @@
 'use client';
 
-import { useActionState, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
-import { sendContactMessageAction } from '@/app/actions';
-import { PendingButton } from './pending-button';
-import { Alert, AlertTitle, AlertDescription } from '../ui/alert';
-import { Terminal } from 'lucide-react';
-
-const initialState = {
-  message: null,
-  error: null,
-};
+import { Button } from '../ui/button';
 
 export default function ContactSection() {
-  const [state, formAction] = useActionState(sendContactMessageAction, initialState);
-  const { toast } = useToast();
-
-  useEffect(() => {
-    if (state.message) {
-      toast({
-        title: '¡Éxito!',
-        description: state.message,
-      });
-    }
-  }, [state, toast]);
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    alert('Gracias por tu mensaje. Esta funcionalidad está en desarrollo.');
+  };
 
   return (
-    <section id="contact" className="w-full bg-gradient-to-br from-background via-gradient-purple to-gradient-green py-12 md:py-24 lg:py-32">
+    <section id="contact" className="w-full bg-gradient-to-br from-gradient-blue via-gradient-purple to-gradient-green py-12 md:py-24 lg:py-32">
       <div className="container mx-auto max-w-3xl px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -42,7 +25,7 @@ export default function ContactSection() {
         </div>
         <Card className="mt-8 shadow-lg bg-card/80 backdrop-blur-sm">
           <CardContent className="p-6">
-            <form action={formAction} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div className="space-y-2">
                   <Label htmlFor="name">Nombre</Label>
@@ -57,17 +40,10 @@ export default function ContactSection() {
                 <Label htmlFor="message">Mensaje</Label>
                 <Textarea id="message" name="message" placeholder="Tu mensaje" className="min-h-[100px]" required />
               </div>
-              <PendingButton buttonText="Enviar Mensaje" />
+              <Button type="submit" className="w-full">Enviar Mensaje</Button>
             </form>
           </CardContent>
         </Card>
-        {state?.error && (
-          <Alert variant="destructive" className="mt-4">
-            <Terminal className="h-4 w-4" />
-            <AlertTitle>Error</AlertTitle>
-            <AlertDescription>{state.error}</AlertDescription>
-          </Alert>
-        )}
       </div>
     </section>
   );
