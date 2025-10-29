@@ -5,11 +5,19 @@ import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '../ui/button';
+import { useToast } from '@/hooks/use-toast';
 
 export default function ContactSection() {
+  const { toast } = useToast();
+
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    alert('Gracias por tu mensaje. Esta funcionalidad está en desarrollo.');
+    const form = event.currentTarget;
+    toast({
+      title: "Mensaje recibido",
+      description: "¡Gracias por tu interés! Me pondré en contacto contigo lo antes posible.",
+    });
+    form.reset();
   };
 
   return (
@@ -48,3 +56,4 @@ export default function ContactSection() {
     </section>
   );
 }
+
