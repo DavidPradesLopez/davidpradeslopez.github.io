@@ -37,7 +37,7 @@ export default function ContactSection() {
           <div className="space-y-2">
             <h2 className="font-headline text-3xl font-bold tracking-tighter text-primary sm:text-5xl">¡Conectemos!</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Estoy siempre abierto a nuevas oportunidades y colaboraciones. Si deseas discutir un proyecto, una idea o simplemente conectar, no dudes en contactarme.
+              Estoy siempre abierto a nuevas oportunidades y colaboraciones. Si deseas compartir un proyecto, una idea o simplemente conectar, no dudes en contactarme.
             </p>
           </div>
         </div>
