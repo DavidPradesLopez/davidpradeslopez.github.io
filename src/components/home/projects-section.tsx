@@ -8,19 +8,19 @@ const projects: Project[] = [
   {
     title: 'Análisis del Stock de Nike',
     description: 'Análisis histórico del precio de cierre de Nike (NKE) y predicción con ARIMA. Este proyecto está organizado como un portfolio de análisis de datos, con limpieza, exploración, visualización y forecasting.',
-    link: 'https://github.com/DavidPradesLopez',
+    link: 'https://github.com/DavidPradesLopez/nike_stock_analysis',
     icon: LineChart,
   },
   {
     title: 'Gestión de alquileres',
     description: 'Esta aplicación permite a los propietarios llevar un control detallado de sus alquileres, inquilinos y pagos. El objetivo es proporcionar una herramienta intuitiva que facilite la gestión diaria.',
-    link: 'https://github.com/DavidPradesLopez',
+    link: 'https://github.com/DavidPradesLopez/gesti-n-de-alquileres',
     icon: Home,
   },
   {
     title: 'Mis proyectos de datos',
     description: 'Repositorio con una colección de proyectos de análisis de datos desarrollados utilizando SQL, Python, R, y Power BI, demostrando técnicas avanzadas y soluciones prácticas.',
-    link: 'https://github.com/DavidPradesLopez',
+    link: 'https://github.com/DavidPradesLopez/mis-proyectos-de-datos',
     icon: Database,
   },
 ];
