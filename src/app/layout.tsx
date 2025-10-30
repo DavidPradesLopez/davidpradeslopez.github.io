@@ -19,6 +19,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet" />
+        <link rel="icon" href="https://i.imgur.com/VrbPcoo.png" type="image/png" sizes="any" />
       </head>
       <body className="font-body antialiased relative bg-white">
         {children}
