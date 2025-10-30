@@ -1,10 +1,14 @@
 import type {NextConfig} from 'next';
 
+const repo = 'Data-Insights-Portfolio';
+const assetPrefix = `/${repo}/`;
+const basePath = `/${repo}`;
+
 const nextConfig: NextConfig = {
   /* config options here */
-  basePath: process.env.NODE_ENV === 'production' ? '/Data-Insights-Portfolio' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/Data-Insights-Portfolio/' : '',
   output: 'export',
+  assetPrefix: process.env.NODE_ENV === 'production' ? assetPrefix : '',
+  basePath: process.env.NODE_ENV === 'production' ? basePath : '',
   images: {
     unoptimized: true,
   },
@@ -17,3 +21,4 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
