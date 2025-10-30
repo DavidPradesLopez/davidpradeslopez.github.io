@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster"
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'DPL-Transformo datos en decisiones inteligentes',
+  title: 'David Prades López - Transformo datos en decisiones inteligentes | Big Data & AI | Python, SQL, Excel avanzado | Estrategia, Análisis y Visualización de Datos',
   description: 'Descubre el portfolio de David Prades López, un analista de datos con más de 15 años de experiencia en el sector retail. Explora mis proyectos y habilidades en optimización del rendimiento comercial, gestión financiera y más.',
 };
 
@@ -19,7 +19,6 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet" />
-        <link rel="icon" href="https://i.imgur.com/VrbPcoo.png" type="image/png" sizes="any" />
       </head>
       <body className="font-body antialiased relative bg-white">
         {children}
