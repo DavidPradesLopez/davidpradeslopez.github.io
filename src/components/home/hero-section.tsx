@@ -35,7 +35,7 @@ export default function HeroSection() {
               <CardContent className="p-0">
                 {heroImage && (
                   <Image
-                    src={heroImage.imageUrl}
+                    src={heroImage.imageUrl.replace('https://i.imgur.com/', '/').replace('.jpeg', '')}
                     alt={heroImage.description}
                     width={400}
                     height={400}
