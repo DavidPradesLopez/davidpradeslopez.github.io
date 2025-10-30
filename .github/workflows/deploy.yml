@@ -34,10 +34,8 @@ jobs:
           cache: "npm"
       - name: Install dependencies
         run: npm install
-        working-directory: ./
       - name: Build with Next.js
         run: npm run build
-        working-directory: ./
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
