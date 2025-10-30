@@ -7,7 +7,7 @@ import { LineChart, Home, Database, Github, ArrowRight } from 'lucide-react';
 const projects: Project[] = [
   {
     title: 'Análisis del Stock de Nike',
-    description: 'Análisis histórico del precio de cierre de Nike (NKE) y predicción con ARIMA. Este proyecto está organizado como un portfolio de análisis de datos, con limpieza, exploración, visualización y forecasting.',
+    description: 'Análisis histórico del precio de cierre de Nike y predicción con ARIMA. Este proyecto está organizado como un portfolio de análisis de datos, con limpieza, exploración, visualización y forecasting.',
     link: 'https://github.com/DavidPradesLopez/nike_stock_analysis',
     icon: LineChart,
   },
