@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 px-4 md:flex-row md:px-6">
         <p className="text-sm text-muted-foreground">© 2025 David Prades López. Todos los derechos reservados.</p>
         <div className="flex items-center gap-4">
-          <Link href="https://www.linkedin.com/in/david-prades-lopez-98b380131" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <Link href="https://www.linkedin.com/in/david-prades-lopez" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <Linkedin className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
           </Link>
           <Link href="https://github.com/DavidPradesLopez" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
