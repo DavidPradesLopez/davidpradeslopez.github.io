@@ -13,7 +13,7 @@ export default function Footer() {
           <Link href="https://github.com/DavidPradesLopez" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <Github className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
           </Link>
-          <Link href="mailto:devidpradeslopez@gmail.com" aria-label="Email">
+          <Link href="mailto:davidpradeslopez@gmail.com" aria-label="Email">
             <Mail className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
           </Link>
         </div>
